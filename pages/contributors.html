@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Phantoms | Contributors</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contributors.css">
+    <!-- Fixed Paths: Added "../" to step out of the pages folder -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contributors.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -13,13 +14,16 @@
 <header>
     <nav class="navbar">
         <div class="logo">
-            <img src="assets/logo.png" alt="Pixel Phantoms Logo">
+            <!-- Fixed Path: ../assets -->
+            <img src="../assets/logo.png" alt="Pixel Phantoms Logo">
             <span>Pixel Phantoms</span>
         </div>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="contributors.html">Contributors</a></li> <li><a href="contact.html">Contact</a></li>
+            <!-- Fixed Paths: ../filename.html for pages in root -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a class="active" href="contributors.html">Contributors</a></li> 
+            <li><a href="../contact.html">Contact</a></li>
             <li>
                 <div class="theme-toggle">
                     <input type="checkbox" id="theme-switch" class="theme-switch">
@@ -73,7 +77,8 @@
 
     <h2>Top Contributors</h2>
     <div class="contributors-grid" id="contributors-grid">
-        </div>
+        <!-- JS will populate this -->
+    </div>
 
     <h2 class="mt-large">Recent Contribution Activity</h2>
     <div class="activity-container" id="activity-list">
@@ -117,7 +122,8 @@
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <img src="assets/logo.png" alt="Pixel Phantoms Logo">
+                    <!-- Fixed Path -->
+                    <img src="../assets/logo.png" alt="Pixel Phantoms Logo">
                     <span class="brand-name">Pixel Phantoms</span>
                 </div>
                 <p class="footer-description">From Students, For Students.</p>
@@ -131,7 +137,8 @@
     </div>
 </footer>
 
-<script src="js/theme.js"></script>
-<script src="js/contributors.js"></script>
+<!-- Fixed Paths: Added "../" for JS files -->
+<script src="../js/theme.js"></script>
+<script src="../js/contributors.js"></script>
 </body>
 </html>
