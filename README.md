@@ -4,6 +4,7 @@
 - [🚀 Why This Project Matters](#-why-this-project-matters)
 - [📦 How to Install & Run Locally](#-how-to-install--run-locally)
 - [📁 Project Structure](#-project-structure)
+- [🔧 Code Formatting & Linting](#code-formatting--linting)
 - [🎨 Screenshot / Demo](#-screenshot--demo)
 - [🤝 How to Contribute](#-how-to-contribute)
 - [🧑‍💻 Core Committee — 2024–25](#-core-committee--202425)
@@ -144,6 +145,63 @@ pixel-phantoms-website/
     ├── projects.html
     └── terms.html
 ```
+
+---
+
+# 🔧 Code Formatting & Linting
+
+This project uses Prettier and ESLint to ensure consistent code style.
+
+### Setup
+
+After cloning the repository, install dependencies:
+``` bash
+npm install
+```
+This will also set up Git hooks automatically (via Husky).
+
+#### Formatting (Prettier)
+
+Format all supported files (.js, .css, and .html)
+```bash
+npm run format
+```
+
+#### Check formatting (no changes)
+
+Useful to verify formatting before committing.
+```bash
+npm run format:check
+```
+
+#### Linting (ESLint)
+
+Run lint checks
+```bash
+npm run lint
+```
+* Reports potential issues and warnings
+* Does not modify files
+
+#### Auto-fix safe issues
+
+```bash
+npm run lint:fix
+```
+Fixes only safe, auto-fixable issues (e.g. spacing, syntax)
+
+#### Pre-commit Hooks
+
+This project uses Husky and lint-staged to enforce formatting and linting before every commit.
+
+* Only staged files are checked
+* JavaScript files:
+   - ESLint (--fix)
+   - Prettier
+* HTML & CSS files:
+   - Prettier
+
+If checks fail → the commit is blocked
 
 ---
 
