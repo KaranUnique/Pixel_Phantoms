@@ -730,6 +730,19 @@
         <p id="feedback-status" class="ff-status"></p>
       </form>
     </div>
+
+    <script src="js/feedback-widget.js"></script>
+    <script>
+  const currentPage = location.pathname.split("/").pop();
+
+  document.querySelectorAll("nav a").forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+  </body>
   </div>
 </body>
 </html>
